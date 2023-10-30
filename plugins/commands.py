@@ -23,12 +23,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('🔰 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/TG_SUPPORT_GROUP"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url="https://t.me/movies_hub_official1")
+                    InlineKeyboardButton('✨ 𝐌𝐎𝐕𝐈𝐄𝐒 𝐆𝐑𝐎𝐔𝐏 ✨', url="https://t.me/sunrisesmoviesOffical24"),
+                    InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒 📢', url="https://t.me/Sunrises24BotUpdates")
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🎞️', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -43,15 +43,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('🔰 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🦋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🦋', url=CHNL_LNK),
-                    InlineKeyboardButton('✨ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ✨', url="https://t.me/movies_hub_official1")
+                    InlineKeyboardButton('𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🎞️', url=CHNL_LNK),
+                    InlineKeyboardButton('✨ 𝐌𝐎𝐕𝐈𝐄𝐒 𝐆𝐑𝐎𝐔𝐏  ✨', url="https://t.me/Sunrises24BotUpdates")
                 ],[
-                    InlineKeyboardButton('👻 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton(' Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('👾 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💰 Eᴀʀɴ Mᴏɴᴇʏ 💰', callback_data="shortlink_info")
+                    InlineKeyboardButton('💰 Eᴀʀɴ Mᴏɴᴇʏ 💰', url="https://t.me/Sunrises24BotUpdates")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAJeOWTqzCw95gnMkoRzi-Kd333UEA4wAAKjBAACSKDRVxK_r9UMhuoLHgQ") 
@@ -153,8 +153,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                        ],[
                           InlineKeyboardButton("MY Owner", url="t.me/KUSHALHK")
                          ]
@@ -172,10 +172,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("MY Owner", url="t.me/KUSHALHK")
+                          InlineKeyboardButton("MY Owner", url="t.me/Sunrises_24")
                          ]
                         ]
                     )
@@ -336,10 +336,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("MY Owner", url="t.me/KUSHALHK")
+                      InlineKeyboardButton("MY Owner", url="t.me/Sunrises_24")
                      ]
                     ]
                 )
@@ -398,10 +398,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("MY Owner", url="t.me/KUSHALHK")
+                      InlineKeyboardButton("MY Owner", url="t.me/Sunrises_24")
                      ]
                     ]
                 )
