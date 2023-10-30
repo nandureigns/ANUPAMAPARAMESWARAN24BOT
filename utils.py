@@ -772,7 +772,7 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                                 InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=GRP_LNK)
                             ],[
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/KUSHALHK")
+                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Sunrises_24")
                                 ]
                             ]
                         )
