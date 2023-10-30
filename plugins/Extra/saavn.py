@@ -5,7 +5,7 @@ import requests,os,wget
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import asyncio
 from info import LOG_CHANNEL
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖🇮🇳✨ Made By ✨🇮🇳💖', url='https://t.me/TG_UPDATES1')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('Made By ✨', url='https://t.me/Sunrises_24')]])
 A = """{} with user id:- {} used /saavn command."""
 B = """{} with user id:- {} used /vsaavn command."""
 
@@ -52,13 +52,13 @@ async def video(client, message):
     ffile = file.replace("mp3", "mp4")
     os.rename(file, ffile)
     buttons = [[
-        InlineKeyboardButton("JOIN MOVIES", url="https://t.me/TG_UPDATES1")
+        InlineKeyboardButton("JOIN Uᴘᴅᴀᴛᴇs", url="https://t.me/Sunrises24BotUpdates")
     ]]                           
     await message.reply_video(
-    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from @TG_UPDATES1 ",thumb=thumbnail,
+    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from @Sunrises24BotUpdates ",thumb=thumbnail,
     reply_markup=InlineKeyboardMarkup(buttons)
 )
-    await message.reply_text(text="download mp3 song @TG_LINKS_CHANNEL")
+    await message.reply_text(text="download mp3 song @Sunrises24BotUpdates")
     os.remove(ffile)
     os.remove(thumbnail)
     await pak.delete()
@@ -106,7 +106,7 @@ async def song(client, message):
 async def r_message(client, message):
     mention = message.from_user.mention
     buttons = [[
-        InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/TG_UPDATES1')
+        InlineKeyboardButton('𝐉𝐨𝐢𝐧 Uᴘᴅᴀᴛᴇs', url=f'http://t.me/Sunrises24BotUpdates')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(START_MESSAGE.format(message.from_user.mention, message.chat.title),
