@@ -54,7 +54,7 @@ async def start(client, message):
                     InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒 📢', url="https://t.me/Sunrises24BotUpdates")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAJeOWTqzCw95gnMkoRzi-Kd333UEA4wAAKjBAACSKDRVxK_r9UMhuoLHgQ") 
+        m=await message.reply_sticker("CAACAgIAAxkBAAJTRmU_knt94Lk7AWujCiFZxJwiAAHB9QAChxUAAiMAAaBLV73BzYKM-wIwBA") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
