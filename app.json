@@ -70,7 +70,7 @@
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
-            "value": "cluster0",
+            "value": "Anupama24bot",
             "required": false
         },
         "COLLECTION_NAME": {
