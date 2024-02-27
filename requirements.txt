@@ -5,7 +5,7 @@ PyLeaves==1.0.2
 #--Main----#
 git+https://github.com/MKN-BOTZ/pyrogram 
 aiofiles==22.1.0     
-aiohttp==3.8.3
+aiohttp==3.8.5
 tgcrypto==1.2.5
 requests
 bs4==0.0.1
@@ -18,7 +18,7 @@ motor==2.5.1
 
 #---ytdl----#
 youtube-search
-yt-dlp==2023.2.17
+yt-dlp==2023.7.06
 
 #---imdb---#
 git+https://github.com/cinemagoer/cinemagoer
@@ -30,7 +30,7 @@ telegraph==2.2.0
 gTTS==2.3.1
 speedtest==0.0.1
 humanize==4.6.0
-Pillow==9.4.0
+Pillow==10.0.1
 psutil==5.9.4
 NumPy
 wheel
